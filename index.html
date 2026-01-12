@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive School .com</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <h1>The Comprehensive School System pakpattan</h1>
+        <p>Learning Today, Leading Tomorrow</p>
+    </header>
+
+    <!-- ===== Navigation ===== -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to our school website. We are happy to have you here.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our School</h2>
+            <p>
+                Our school provides quality education and helps students grow
+                academically and personally.
+            </p>
+        </section>
+
+        <!-- Classes Section -->
+        <section id="classes">
+            <h2>Our Classes</h2>
+            <ul>
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>English</li>
+                <li>Computer Studies</li>
+            </ul>
+        </section>
+
+        <!-- Teachers Section -->
+        <section id="teachers">
+            <h2>Our Teachers</h2>
+            <p>We have experienced and friendly teachers.</p>
+        </section>
+
+       <!-- Gallery Section -->
+<section id="gallery">
+  <h2>School Gallery</h2>
+  <div class="gallery-container">
+    <img  src="image 4.jpg" alt="School Image 1">
+    <img height="1000" src="image 5.jpg" alt="School Image 2">
+    <img src="image3.jpg" alt="School Image 3">
+   
+  </div>
+</section>
+
+<!-- CSS for Gallery -->
+<style>
+  #gallery {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  #gallery h2 {
+    margin-bottom: 30px;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+</style>
+
+        
+      
+        </section>
+
+        <!-- Contact Section -->
+        
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2026 My School Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f0f2f5;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2E7D32;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 8px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2E7D32;
+            font-size: 2.5rem;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #4CAF50;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* About */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Courses */
+        .courses .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .course-list div {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .course-list div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        .course-list h3 {
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        button {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            header h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Comprehensive School</h1>
+        <p>Learn, Grow, and Succeed in a Modern Environment</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Our school provides high-quality education with a focus on student growth and success. We offer modern classrooms, experienced teachers, and a safe learning environment where every student can thrive.</p>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div>
+                <h3>Mathematics</h3>
+                <p>Learn algebra, geometry, calculus, and problem-solving skills.</p>
+            </div>
+            <div>
+                <h3>Science</h3>
+                <p>Explore physics, chemistry, biology, and hands-on experiments.</p>
+            </div>
+            <div>
+                <h3>Languages</h3>
+                <p>Develop reading, writing, and speaking skills in multiple languages.</p>
+            </div>
+            <div>
+                <h3>Arts</h3>
+                <p>Discover creativity through painting, music, and drama.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Comprhensive School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+<section id="news" class="news">
+    <h2>School News & Events</h2>
+    <div class="news-list">
+        <div class="news-card">
+            <h3>School Reopen on 19 January 2026 After Winter Vacations</h3>
+            <p>Our annual Science Fair will be held on 15th February 2026. Students will present exciting experiments and projects.</p>
+            <span class="date">Feb 15th, 2026</span>
+        </div>
+        <div class="news-card">
+            <h3>Sports Day</h3>
+            <p>Join us for our School Sports Day on 28th March 2026. Fun activities and competitions for all students!</p>
+            <span class="date">28th March 2026</span>
+        </div>
+        <div class="news-card">
+            <h3>parents Teachers Meating</h3>
+            <p>Our parents Teachers Meating will be held on 1st April 2026.</p>
+            <span class="date">1st April 2026</span>
+        </div>
+    <!-- Modern Contact Section -->
+<section id="contact">
+  <!-- Stylish Contact Form -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+    <div class="input-group">
+      <input type="text" id="name" name="name" required>
+      <label for="name">Name</label>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="email" name="email" required>
+      <label for="email">Email</label>
+    </div>
+
+    <div class="input-group">
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+    </div>
+
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+
+    <p id="formMessage">Thank you! Your message has been sent.</p>
+  </form>
+</section>
+
+<!-- CSS -->
+<style>
+  body { font-family: Arial, sans-serif; }
+  #contact { max-width: 500px; margin: 50px auto; padding: 30px; background: #f8f8f8; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+  #contact h2 { text-align: center; margin-bottom: 30px; color: #333; }
+
+  .input-group { position: relative; margin-bottom: 25px; }
+  .input-group input,
+  .input-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; font-size: 14px; outline: none; }
+  .input-group label { position: absolute; top: 12px; left: 15px; color: #888; transition: 0.3s; pointer-events: none; }
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label,
+  .input-group textarea:focus + label,
+  .input-group textarea:not(:placeholder-shown) + label { top: -10px; left: 10px; font-size: 12px; color: #007BFF; background: #f8f8f8; padding: 0 5px; }
+
+  button { padding: 12px 25px; border: none; border-radius: 10px; margin-right: 10px; cursor: pointer; background: #007BFF; color: #fff; font-weight: bold; transition: 0.3s; }
+  button:hover { background: #0056b3; }
+
+  #formMessage { display: none; text-align: center; color: green; margin-top: 20px; font-weight: bold; }
+
+  /* Responsive */
+  @media (max-width: 600px) { button { width: 100%; margin-bottom: 10px; } }
+</style>
+
+<!-- JS for Form Submission -->
+<script>
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        formMessage.style.display = 'block';
+        form.reset();
+        setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+      } else {
+        alert("Oops! There was a problem submitting your form.");
+      }
+    }).catch(() => {
+      alert("Oops! There was a problem submitting your form.");
+    });
+  });
+</script>
